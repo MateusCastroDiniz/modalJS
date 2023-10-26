@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    margin: 0 !important;
+    font-size: 15px;
+}
+
+h1{
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+#div-formulario{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.bloco{
+    padding: 0;
+    background-color: #edededb0;
+    width: 100%;
+    margin: 20px;
+}
+
+#resposta{
+    padding: 10px;
+    display: none;
+}
+
+#cadastro{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    display: none;
+    
+}
+input[type="text"],input[type="number"],input[type="tel"],input[type="email"], select{ 
+    border-radius: 15px;
+    border-width:0;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+input[type=submit]{
+    width: fit-content;
+    color: #ffffff;
+    font-size: 17px;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    padding: 7px;
+    border-radius: 20px;
+    border-width: 0.1px;
+    border-color: rgb(238, 238, 238);
+    background-color: rgb(0, 25, 168);
+
+}
+
+.div-formulario{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #edededb0;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.bloco-form{
+    border-radius: 20px;
+    border: solid;
+    border-width: 0.1rem;
+    border-color: #ffffff;
+    border-bottom-color: rgb(57, 57, 250);
+    padding: 2rem;
+    margin: 1rem;
+    text-align: left;
+    align-items: center;
+    width: 50%;
+}
+
+.mensagem{
+    font-size: 15px;
+}
+
+.desabilitado{
+    background-color: #f00 !important;
+    display: none;
+}
+
+.invisible{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+.erro{
+    border-color: rgba(255, 0, 0, 0.582) !important;
+    border-width: 1px !important;
+}
+
+input.erro::placeholder{
+    color: rgb(255, 0, 0);
+}
+
+
+@media(max-width : 600px){
+    
+    body{
+        justify-content: flex-start !important;
+    }
+
+    .div-formulario, .bloco-form{
+        width: 80%;
+    }
+}

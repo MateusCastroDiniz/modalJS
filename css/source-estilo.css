@@ -1,0 +1,361 @@
+html, body {
+    height: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    scroll-behavior: smooth;
+    background-color: #fff;	
+    font-size: 62.5%
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+/* Style the header */
+header {
+    text-align: center;
+    box-sizing: border-box;
+    background-image: linear-gradient(60deg,#569aff,  #e2ff41);
+    height: 3.5rem;
+    margin: 1rem;
+    text-align: center;
+    font-size: 35px;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: height 1.5s;
+}
+
+header:hover, header:focus{
+    height: 20rem;
+}
+
+header h5{
+	padding: 0;
+    margin: 0;
+	position: relative;
+    font-size: 2.5rem;
+}
+
+nav > ul, a{
+	padding: 0rem 0rem .8rem 0rem;
+    text-decoration:none;
+    color: white;
+}
+
+article {
+    padding: 20px;
+    background-color: #f7f7f9;
+    border-radius: 35px;
+    border: solid;
+    border-width: thin;
+    border-color: #eff2f5;
+    margin: 1rem 1rem 1rem 1rem;
+    line-height: 2.1rem;
+}
+
+article > h1 {
+    padding-bottom: 2rem;
+    margin: 1rem 0 1.5rem 0;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 1rem;
+} 
+
+section{
+    display:grid;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 1.7rem;
+}
+
+section::after {
+	background: #f7f7f9;
+	content: "";
+	clear:both;
+}
+
+form div{
+    margin:1rem  1rem 2rem 1rem;
+    padding: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Style the footer */
+footer {
+    padding: 0px;
+    color: black;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: column;
+    background: #f7f7f9;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+footer p{
+    padding: 1rem 0;
+	margin: 1rem;
+    
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media(max-width : 400px){
+    section{
+        width: 100%;
+    }
+	article {
+		width: 80%;
+		height: fit-content;
+	}
+    .article-tabela{
+        width: 80%;
+    }
+}
+
+@media (max-width : 700px){
+	section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+	article {
+		width: 80%;
+		height: fit-content;
+	}
+    .article-tabela{
+        width: 80%;
+        overflow: scroll;
+    }
+}
+@media (max-width : 1024px){
+    section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+	article {
+		width: 80%;
+		height: fit-content;
+	}
+
+}
+
+@media(min-width : 1024px){
+    section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+	article {
+		width: 65%;
+		height: fit-content;
+	}
+}        
+
+p {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 1rem;
+}
+
+blockquote{
+    text-align: justify;
+}
+
+.bloco{
+    border-radius: 35px;
+    background: #D3D7DA;
+    padding: 10px 10px 0px 10px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 0 0 3px rgb(143 143 143);
+    text-align: center;
+    font-size:1.7rem;
+    width: 13.5rem;
+}
+
+.bloco-form{
+    background-color: #e3e3e3b0;
+    border-radius: 20px;
+    border: solid;
+    border-width: 0.1rem;
+    border-color: #eff2f5;
+    border-bottom-color: rgb(57, 57, 250);
+    padding: 2rem;
+    margin: 1rem;
+    text-align: left;
+    align-items: center;
+    width: 100%;
+}
+
+.bloco > h3{
+    margin: 1rem 0rem 1rem 0rem;
+    padding-bottom: 0rem;
+}
+
+.bloco-elemento{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background: #D3D7DA;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 20px 10px 20px;
+    box-shadow: 0 0 3px rgb(143 143 143);
+    text-align: center;
+    font-size: 1.7rem;
+    width: 55rem;
+    position: relative;
+}
+
+:root{
+    --largura-menu:max-content;
+}
+
+
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    height: 15rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    margin-top: 2rem;
+}
+
+#menu a {
+    color: black;
+    font-size: 1.7rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+}
+
+#menu li {
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+#projs{
+    list-style-type: disc !important;
+    list-style-position:inside;
+    padding-top: 0rem;
+}
+
+#titulo-header{
+    margin: 0.4rem;
+}
+
+#div-projetos{
+    padding: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 2rem;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    height: 15rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.projetos a {
+    color: black;
+    font-size: 1.7rem;
+    margin: 0 1rem 0 1rem;
+    text-align: center;
+}
+
+.projetos li {
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+#lista a, ul{
+    color: black;
+    text-decoration: underline;
+    list-style-type: none;
+}
+
+.div-formulario{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    vertical-align: middle;
+}
+
+#apresentacao{
+    text-align: center;
+}
+#apresentacao h1, p{
+    padding: 1rem 0rem;
+}
+
+
+#eu{
+    margin-left: 10%;
+}
+
+#listalink h3{
+    font-weight: bold;
+}
+
+.titulotexto{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+.titulo{
+    font-weight: normal;
+}
+
+[type="text"], [type="email"], textarea, label{
+    display: block;
+    width: 100%;
+    font-family: sans-serif;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+[type="text"], [type="email"], textarea{
+    background-color: rgb(255, 255, 255);
+    border-width: 0px;
+}
+
+textarea{
+    resize:none;
+}
